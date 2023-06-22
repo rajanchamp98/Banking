@@ -5,6 +5,11 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { users } from "./defaultUser.js";
 import User from "./models/user.js";
+import path,{dirname} from 'path'
+import { fileURLToPath } from 'url';
+const __dirname=dirname(fileURLToPath(import.meta.url))
+
+
 
 import userRoutes from "./routes/users.js"; // imp
 import transactionsRoutes from "./routes/transactions.js"; // imp
@@ -16,6 +21,9 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/users", userRoutes); // imp /users/register
 app.use("/transactions", transactionsRoutes); // imp /users/register
+app.use("*",(req,res)=>{
+  res.sendFile(path.resolve(__dirname,"public","index.html"));
+})
 
 const createDefaultUsers = async () => {
   try {
