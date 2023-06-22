@@ -5,18 +5,24 @@
       "use": "@vercel/node"
     },
     {
-      "src":"public/**",
+      "src":"build/**",
       "use":"@vercel/static"
     }
   ],
   "routes": [
+   
     {
       "src":"/",
-      "use":"public/index.html"
+      "dest":"build/index.html"
+    },
+    {
+      "src":"/login",
+      "dest":"build/index.html"
+    },
+    {
+      "src":"/register",
+      "dest":"build/index.html"
     }
-
-
-  
   ]
  
   
