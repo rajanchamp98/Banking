@@ -9,8 +9,6 @@ import User from "./models/user.js";
 import userRoutes from "./routes/users.js"; // imp
 import transactionsRoutes from "./routes/transactions.js"; // imp
 
-const PORT =  process.env.PORT || 4040 ;
-
 const app = express();
 dotenv.config();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
