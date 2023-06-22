@@ -21,15 +21,15 @@
     },
     {
       "src":"/",
-      "dest":"public/index.html"
+      "dest":"index.html"
     },
     {
       "src":"/login",
-      "dest":"public/index.html"
+      "dest":"index.html"
     },
     {
       "src":"/register",
-      "dest":"public/index.html"
+      "dest":"index.html"
     }
     
   ]
