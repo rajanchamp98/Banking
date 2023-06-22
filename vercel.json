@@ -10,10 +10,60 @@
     }
   ],
   "routes": [
+    {
+      "src":"/users",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/register-user",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/get-user-balance",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/deposit-money",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/withdraw-money",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/get-all-users",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/get-user-data",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/users/login-user",
+      "dest":"app.js"
+
+    },
+    {
+      "src":"/transactions//get-user-transaction",
+      "dest":"app.js"
+
+    },
+
     
     {
       "src":"/",
       "dest":"dist/index.html"
+    }
+    ,{
+      "src":"/(.+)",
+      "des":"dist/$1"
     }
   ]
  
