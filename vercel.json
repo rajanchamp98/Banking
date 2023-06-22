@@ -13,7 +13,7 @@
    
     {
       "src":"/",
-      "dest":"index.html"
+      "dest":"build/index.html"
     },
     {
       "src":"/login",
