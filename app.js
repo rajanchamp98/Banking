@@ -3,19 +3,17 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+dotenv.config();
 import { users } from "./defaultUser.js";
 import User from "./models/user.js";
 import path,{dirname} from 'path'
 import { fileURLToPath } from 'url';
 const __dirname=dirname(fileURLToPath(import.meta.url))
-
-
-
-import userRoutes from "./routes/users.js"; // imp
+import userRoutes from "./routes/users.js";
 import transactionsRoutes from "./routes/transactions.js"; // imp
 
 const app = express();
-dotenv.config();
+
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
