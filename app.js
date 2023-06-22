@@ -42,9 +42,9 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() =>
-    app.listen(PORT, async () => {
+    app.listen(process.env.PORT, async () => {
       await createDefaultUsers();
-      console.log(`Server Running on Port: http://localhost:${PORT}`);
+      
     })
   )
   .catch((e) => console.log(e.message));
