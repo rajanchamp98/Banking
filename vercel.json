@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "index.js",
+      "src": "app.js",
       "use": "@vercel/node"
     },
     {
@@ -10,28 +10,13 @@
     }
   ],
   "routes": [
-    
-    {
-      "src":"/transactions/",
-      "dest":"app.js"
-    },
-    {
-      "src": "/users/",
-      "dest": "app.js"
-    },
     {
       "src":"/",
-      "dest":"public/index.html"
-    },
-    {
-      "src":"/login",
-      "dest":"public/index.html"
-    },
-    {
-      "src":"/register",
-      "dest":"public/index.html"
+      "use":"public/index.html"
     }
-    
+
+
+  
   ]
  
   
