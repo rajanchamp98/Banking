@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "./build",    
+      "src": "./build/(.*)",    
       "use": "@vercel/static"
     }
   ],
@@ -14,7 +14,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination":"/build/index.html"
+      "destination":"index.html"
     }
   ]
 }
