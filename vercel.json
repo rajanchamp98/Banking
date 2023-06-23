@@ -12,7 +12,7 @@
   "routes":[
     {
       "src":"/",
-      "use":"./build/index.html"
+      "dest":"./build/index.html"
     }
   ]
 }
