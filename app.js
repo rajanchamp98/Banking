@@ -20,7 +20,7 @@ app.use(cors());
 app.use("/users", userRoutes); // imp /users/register
 app.use("/transactions", transactionsRoutes); // imp /users/register
 app.use("*",(req,res)=>{
-  res.sendFile(path.resolve(__dirname,"public","index.html"));
+  res.sendFile(path.resolve(__dirname,"build","index.html"));
 })
 
 const createDefaultUsers = async () => {
