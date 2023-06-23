@@ -21,16 +21,16 @@
     },
     {
       "src":"/",
-      "dest":"build/index.html"
+      "dest":"index.html"
     },
     {
       "src":"/login",
-      "dest":"build/index.html"
+      "dest":"index.html"
     },
    
     {
       "src":"/(.+)",
-      "dest":"build/index.html"
+      "dest":"index.html"
     }
   ]
  
