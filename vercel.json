@@ -15,11 +15,7 @@
   "rewrites": [
     {
     "source":"/",
-    "destination":"./build/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "./app.js"
+    "destination":"index.html"
     }
   ]
 }
