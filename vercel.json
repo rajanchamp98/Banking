@@ -1,14 +1,38 @@
 {
-    "builds": [
+  "builds": [
     {
-      "src": "build/**",    
-      "use": "@vercel/static"
+      "src": "app.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src":"build/**",
+      "use":"@vercel/static"
     }
   ],
   "routes": [
+    
     {
-      "src": "/",
-      "dest": "index.html"
+      "src":"/users/(.*)",
+      "dest":"index.js"
+    },
+    {
+      "src": "/register/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src":"/",
+      "dest":"build/index.html"
+    },
+    {
+      "src":"/login",
+      "dest":"build/index.html"
+    },
+   
+    {
+      "src":"/(.+)",
+      "dest":"build/index.html"
     }
   ]
+ 
+  
 }
