@@ -13,6 +13,10 @@
     {
       "source": "/(.*)",
       "destination": "app.js"
+    },
+    {
+      "source":"/(.*)",
+      "destination":"index.html"
     }
   ]
 }
